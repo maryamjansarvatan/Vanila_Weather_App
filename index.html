@@ -4,78 +4,83 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
     <title>App Weather</title>
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <form class="search-form" id="search-form">
-          <div class="row">
-            <div class="col-6">
-              <input
-                type="search"
-                placeholder="Type a city.."
-                autofocus="on"
-                autocomplete="off"
-                id="city-input"
-                class="form-control shadow-sm"
-              />
-            </div>
-            <div class="col-3">
-              <input
-                type="submit"
-                value="Search"
-                class="form-control btn btn-primary shadow-sm"
-              />
-            </div>
-            <div class="col-3">
-              <button
-                class="btn btn-success w-100"
-                id="current-location-button"
-              >
-                Current
-              </button>
-            </div>
-          </div>
-        </form>
-        <h1 id="city">Isfahan, Iran</h1>
-        <ul>
-          <li id="date">Friday 01:38</li>
-          <li id="description">Partly Cloudy</li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <div class="clearfix">
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt="Cloudy icon"
-                class="weather-icon float-left"
-              />
-              <div class="float-left">
-                <span class="temperature" id="temperature">19</span
-                ><span class="units">°C | °F</span>
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="overview">
+            <form class="search-form" id="search-form">
+              <div class="row">
+                <div class="col-6">
+                  <input
+                    type="search"
+                    placeholder="Type a city.."
+                    autofocus="on"
+                    autocomplete="off"
+                    id="city-input"
+                    class="form-control shadow-sm"
+                  />
+                </div>
+                <div class="col-3">
+                  <input
+                    type="submit"
+                    value="Search"
+                    class="form-control btn btn-primary shadow-sm"
+                  />
+                </div>
+                <div class="col-3">
+                  <button
+                    class="btn btn-success w-100"
+                    id="current-location-button"
+                  >
+                    Current
+                  </button>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-6">
+            </form>
+            <h1 id="city">Isfahan, Iran</h1>
             <ul>
-              <li>Precipitation: <span id="Precipitation">0</span> %</li>
-              <li>Humidity: <span id="Humidity">34</span> %</li>
-              <li>Wind: <span id="Wind">21</span> km/h</li>
+              <li id="date">Friday 01:38</li>
+              <li id="description">Partly Cloudy</li>
             </ul>
           </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  alt="Cloudy icon"
+                  class="weather-icon float-left"
+                />
+                <div class="float-left">
+                  <span class="temperature" id="temperature">19</span
+                  ><span class="units">°C | <a href="#">°F</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Precipitation: <span id="Precipitation">0</span> %</li>
+                <li>Humidity: <span id="Humidity">34</span> %</li>
+                <li>Wind: <span id="Wind">21</span> km/h</li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <small>
+          <a
+            href="https://github.com/maryamjansarvatan/My_Weather_Application"
+            target="_blank"
+            >Open-source code</a
+          >
+          , by "Maryam Jansarvatan"
+        </small>
       </div>
-      <small>
-        <a
-          href="https://github.com/maryamjansarvatan/My_Weather_Application"
-          target="_blank"
-          >Open-source code</a
-        >
-        ", by Maryam Jansarvatan"
-      </small>
     </div>
     <script src="src/script.js"></script>
   </body>
