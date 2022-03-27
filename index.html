@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>App Weather</title>
@@ -29,7 +35,7 @@
                 <input
                   type="submit"
                   value="Search"
-                  class="form-control btn btn-primary shadow-sm w-100"
+                  class="btn btn-primary shadow-sm w-100"
                 />
               </div>
               <div class="col-3">
@@ -56,7 +62,7 @@
                   src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
                   alt="Cloudy icon"
                   id="icon"
-                  class="weather-icon float-left"
+                  class="float-left"
                 />
                 <div class="float-left">
                   <span class="temperature" id="temperature">19</span
@@ -69,7 +75,6 @@
             </div>
             <div class="col-6">
               <ul>
-                <li>Precipitation: <span id="Precipitation">0</span> %</li>
                 <li>Humidity: <span id="humidity">34</span> %</li>
                 <li>Wind: <span id="wind">21</span> km/h</li>
               </ul>
