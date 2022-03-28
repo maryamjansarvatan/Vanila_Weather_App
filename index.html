@@ -21,7 +21,7 @@
         <div class="weather-app">
           <form class="search-form" id="search-form" class="mb-3">
             <div class="row">
-              <div class="col-6">
+              <div class="col-9">
                 <input
                   type="search"
                   placeholder="Type a city.."
@@ -37,14 +37,6 @@
                   value="Search"
                   class="btn btn-primary shadow-sm w-100"
                 />
-              </div>
-              <div class="col-3">
-                <button
-                  class="btn btn-success w-100"
-                  id="current-location-button"
-                >
-                  Current
-                </button>
               </div>
             </div>
           </form>
@@ -78,6 +70,22 @@
                 <li>Humidity: <span id="humidity">34</span> %</li>
                 <li>Wind: <span id="wind">21</span> km/h</li>
               </ul>
+            </div>
+          </div>
+          <div class="weather-forecast">
+            <div class="row">
+              <div class="col-2">
+                <div class="weather-forecast-date">Mon</div>
+                <img
+                  src="http://openweathermap.org/img/wn/50d@2x.png"
+                  alt=""
+                  width="44"
+                />
+                <div class="weather-forecast-temperatures">
+                  <span class="weather-forecast-temperature-max"> 18° </span>
+                  <span class="weather-forecast-temperature-min"> 1° </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
