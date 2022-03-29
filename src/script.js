@@ -47,14 +47,16 @@ function displayForecast(response) {
         `
   
     <div class="col-2">
-      <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
+      
       <img
         src="http://openweathermap.org/img/wn/${
           forecastDay.weather[0].icon
         }@2x.png"
         alt=""
-        width="44"
+        width="55"
       />
+      <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
+
       <div class="weather-forecast-temperatures">
         <span class="weather-forecast-temperature-max"> ${Math.round(
           forecastDay.temp.max
@@ -87,6 +89,9 @@ function displayWeatherCondition(response) {
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
+  );
+  document.querySelector("#feels_like").innerHTML = Math.round(
+    response.data.main.feels_like
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;

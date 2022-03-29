@@ -11,11 +11,21 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Comfortaa:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
-    <title>App Weather</title>
+    <title>Maryam's Weather App</title>
   </head>
-  <body>
+  <body
+    class="background-image"
+    data-new-gr-c-s-check-loaded="14.1054.0"
+    data-gr-ext-installed
+  >
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
@@ -41,7 +51,7 @@
             </div>
           </form>
           <div class="overview">
-            <h1 id="city">Isfahan, Iran</h1>
+            <h1 id="city">Isfahan</h1>
             <ul>
               <li>last updated: <span id="date"></span></li>
               <li id="description">Partly Cloudy</li>
@@ -69,6 +79,7 @@
               <ul>
                 <li>Humidity: <span id="humidity">34</span> %</li>
                 <li>Wind: <span id="wind">21</span> km/h</li>
+                <li>Feels Like: <span id="feels_like">11</span>°C</li>
               </ul>
             </div>
           </div>
@@ -84,6 +95,7 @@
         </small>
       </div>
     </div>
+
     <script src="src/script.js"></script>
   </body>
 </html>
